@@ -1,0 +1,308 @@
+html {
+    box-sizing:border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom,
+    #7fd7d7 0%,
+    #88d0a4 25%,
+    #4fcd88fb 50%,
+    #92dab5 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+
+.wrapper.two {
+    /* background-color: #2c0101; */
+    font-size: 6rem;
+    font-family: "Play", sans-serif;
+}
+.neon {
+    margin: 1rem auto;
+    animation: neon 1s ease infinite;
+    animation-duration: 3s;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #00e7efa8, 0 0 20px #00efe3a8, 0 0 20px #00efdba8, 0 0 20px #00efc7a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #0b8049, 0 0 5px #0b801f, 0 0 5px #0b7280, 0 0 5px #0b7280, 0 0 2px #0b7c80, 4px 4px 2px #0a3e40;
+        color: #a0e1ed;
+    }
+}
+
+
+
+.color {
+  width: 100px;
+  height: 100px;
+  /* background-color: red;  */
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}
+
+@keyframes myAnimation {
+  0%   {color: rgb(178, 253, 224);}
+  25%  {color: rgb(126, 238, 141);}
+  50%  {color: rgb(70, 143, 238);}
+  100% {color: green;}
+}
+
+
+.wrapper.six{
+  background-color: #222222;
+}
+.flicker {
+  /* font-size: 6rem; */
+  font-family: 'Merienda', sans-serif;
+  margin: 1rem auto;
+  color: #0a0e0e9d;
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#979797), color-stop(0.8, #ffffff)) no-repeat;
+  background: gradient(linear, left top, right top, from(#8b8b8b), to(#cac5c5), color-stop(0.8, #fff)) no-repeat;
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 1.5s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+
+
+.fadein {
+  animation: fade-in 10s 
+  /* linear infinite; */
+ }
+  @keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.silly  {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.reg {font-family: "neue-frutiger-world", sans-serif;
+ font-style: normal;
+ font-weight: 400;
+   color: rgb(40, 62, 47);
+    font-size: 30px;}
+
+.heavybig { font-family: "neue-frutiger-world", sans-serif;
+ font-style: normal;
+ font-weight: 700;
+  color: rgb(40, 62, 47);
+    font-size: 30px;
+    /* position: center; */
+
+
+}
+
+
+.italic {
+
+font-family: "neue-frutiger-world", sans-serif;
+ font-style: italic;
+ font-weight: 400;
+    color: rgb(40, 62, 47);
+    font-size: 18px;
+
+}
+
+.heavyitalic {
+
+    font-family: "neue-frutiger-world", sans-serif;
+ font-style: italic;
+ font-weight: 700;
+    color: rgb(40, 62, 47);
+    font-size: 18px;
+
+}
+
+
+.heavy {font-family: "neue-frutiger-world", sans-serif;
+ font-style: normal;
+ font-weight: 700;
+   color: rgb(40, 62, 47);
+    font-size: 18px;}
+
+
+
+.light
+
+{
+
+font-family: "neue-frutiger-world", sans-serif;
+ font-style: normal;
+ font-weight: 100;
+  color: rgb(40, 62, 47);
+    font-size: 18px;
+
+
+}
+
+
+.lightitalic
+
+{
+
+font-family: "neue-frutiger-world", sans-serif;
+ font-style: italic;
+ font-weight: 100;
+  color: rgb(40, 62, 47);
+    font-size: 18px;
+
+
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    column-gap: 20px;  
+    row-gap: 10px;
+    font-family: "neue-frutiger-world", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   color: rgb(40, 62, 47);
+    font-size: 18px;
+ 
+}
+
+.pair { 
+ display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    column-gap: 1px; 
+    row-gap: 5px;
+}
+
+.box1 {
+background: linear-gradient(to bottom,
+    #c5e8ff 0%,
+    #1f8cbf 55%,
+    #005f9a 55%,
+    #28647a 100%
+);
+/* border: 1px solid rgb(36, 169, 24); */
+border-radius: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+/* height: 30px; */
+padding: 2em;
+/* width: 1fr; */
+}
+
+.box2 {
+background: linear-gradient(to bottom,
+    #c8ffc55e 0%,
+    #1fbf2439 55%,
+    #009a052d 55%,
+    #457a283a 100%
+    );
+border: 1px solid rgba(103, 163, 104, 0.185);
+border-radius: 30px;
+display: flex; 
+align-items: center;
+justify-content: center;
+position: relative;
+padding: 1em;
+/* height: 30px; */
+}
+
+.box3 {
+
+background: linear-gradient(to bottom,
+    #c8ffc55e 0%,
+    #1fbf2439 55%,
+    #009a052d 55%,
+    #457a283a 100%
+    );
+border: 1px solid rgba(103, 163, 104, 0.185);
+border-radius: 30px;
+display: flex; 
+align-items: center;
+justify-content: center;
+position: relative;
+padding: 1em;
+ font-family: "neue-frutiger-world", sans-serif;
+ font-style: normal;
+ font-weight: 700;
+   color: rgb(40, 62, 47);
+    font-size: 30px;
+
+}
+
+.box4 {
+
+background: linear-gradient(to bottom,
+    #c8ffc55e 0%,
+    #1fbf2439 55%,
+    #009a052d 55%,
+    #457a283a 100%
+    );
+border: 1px solid rgba(103, 163, 104, 0.185);
+border-radius: 30px;
+/* display: flex;  */
+padding: 1em; 
+
+}
+
+.pair { display: grid;
+    grid-template-columns: 10px 10px;
+    grid-gap: 20px;
+    column-gap: 40px;  
+    row-gap: 10px;}
+
+.button-left {
+height: 50px;
+width: 50px;
+
+}
+
+
+.button-right {
+height: 50px;
+width: 50px;
+}
+
+.title {
+
+font-family: "neue-frutiger-world", sans-serif;
+font-weight: 700;
+font-style: normal;
+ font-size: 50px;
+
+}
